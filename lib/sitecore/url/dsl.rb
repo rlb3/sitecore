@@ -54,12 +54,11 @@ module Sitecore
         if @fields.size > 1
           @fields.join('&')
         else
-          @fields.first
+          @fields.first || ''
         end
       end
 
       def item_fields(fields)
-        binding.pry
         @fields << "fields=#{fields}" if fields
         self
       end
