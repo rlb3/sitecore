@@ -7,7 +7,7 @@ task default: :spec
 
 task :console do
   require 'pry'
-  require 'context_hub_vault'
+  require 'sitecore'
   ARGV.clear
   Pry.start
 end
