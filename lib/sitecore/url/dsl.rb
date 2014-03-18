@@ -30,7 +30,7 @@ module Sitecore
       end
 
       def item_id(id)
-        escaped_id = CGI::escape("{#{id}}")
+        escaped_id = CGI.escape("{#{id}}")
         self.sc_itemid = "sc_itemid=#{escaped_id}"
         self
       end
